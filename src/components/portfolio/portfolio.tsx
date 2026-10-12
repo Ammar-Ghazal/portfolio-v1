@@ -1,15 +1,15 @@
 import classNames from 'classnames';
-import styles from './portofolio.module.scss';
+import styles from './portfolio.module.scss';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 
-export interface PortofolioProps {
+export interface PortfolioProps {
     className?: string;
 }
 
-export const Portofolio = ({ className }: PortofolioProps) => {
+export const Portfolio = ({ className }: PortfolioProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <div className={styles['portofolio-wrapper']}>
+            <div className={styles['portfolio-wrapper']}>
                 <h3 className={styles.h3}>About Me</h3>
                 <motion.svg
                     height="4"
@@ -47,7 +47,7 @@ export const Portofolio = ({ className }: PortofolioProps) => {
                 {'and '}
                 <span className={styles.span}>CSS</span>. I am a curious and motivated learner who is always looking to explore and learn about new technology.</p>
             <p className={styles.p}>
-                <div className={styles['portofolio-wrapper']}>
+                <div className={styles['portfolio-wrapper']}>
                     <h3 className={styles.h3}>Contact Me</h3>
                     <motion.svg
                         height="4"

@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import styles from './intro.module.scss';
 import { Animation } from '../animation/animation';
 import { motion } from 'framer-motion';
-import { Portofolio } from '../portofolio/portofolio';
+import { Portfolio } from '../portfolio/portfolio';
 // import starThings from "../../App.module.scss";
 
 export interface IntroProps {

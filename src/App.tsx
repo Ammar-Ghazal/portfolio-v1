@@ -1,6 +1,5 @@
 import styles from './App.module.scss';
 import { Home } from './components/home/home';
-import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -10,9 +9,7 @@ function App() {
       </div>
 
       <div className={styles.App}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <Home />
       </div>
     </div>
   );

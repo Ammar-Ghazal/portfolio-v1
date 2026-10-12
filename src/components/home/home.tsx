@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import styles from './home.module.scss';
 import { Intro } from '../intro/intro';
-import { Portofolio } from '../portofolio/portofolio';
+import { Portfolio } from '../portfolio/portfolio';
 
 export interface HomeProps {
     className?: string;
@@ -15,7 +15,7 @@ export const Home = ({ className }: HomeProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <Intro />
-            <Portofolio />
+            <Portfolio />
         </div>
     );
 };
