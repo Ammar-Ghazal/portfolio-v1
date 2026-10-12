@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import styles from './animation.module.scss';
-import Lottie from 'lottie-react';
+import { Lottie } from 'lottie-react';
 import hand from '../../assets/animation.json';
 import { motion } from 'framer-motion';
 
@@ -20,7 +20,7 @@ export const Animation = ({ className }: AnimationProps) => {
             transition={{ delay: 0.6, duration: 0.5 }}
             className={classNames(styles.root, className)}
         >
-            <Lottie animationData={hand} className={styles.hand} />
+            <Lottie src={hand} autoplay loop className={styles.hand} />
         </motion.div>
     );
 };

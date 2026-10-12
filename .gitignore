@@ -1,11 +1,16 @@
-# Ignore node_modules directory
+# Dependencies
 node_modules/
 
-# Ignore log files
+# Build output and caches
+dist/
+.vite/
+
+# Logs
 *.log
 
-# Ignore npm's debug log
-npm-debug.log
-
-# Ignore environment-specific files
+# Environment-specific files
 .env
+.env.*
+
+# macOS
+.DS_Store
